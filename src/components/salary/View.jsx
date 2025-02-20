@@ -17,7 +17,7 @@ const ViewSalary= () => {
             const token = localStorage.getItem("token");
             
 
-            const response = await axios.get(`http://localhost:3000/api/salary/${id}/${user.role}`, {
+            const response = await axios.get(`https://employee-server-five.vercel.app/api/salary/${id}/${user.role}`, {
                 headers: {
                     Authorization: `Bearer ${token}`,
                 },

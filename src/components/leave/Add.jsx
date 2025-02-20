@@ -29,7 +29,7 @@ const Add = () => {
                 return;
             }
 
-            const response = await axios.post("http://localhost:3000/api/leave/add", leave, {
+            const response = await axios.post("https://employee-server-five.vercel.app/api/leave/add", leave, {
                 headers: {
                     Authorization: `Bearer ${token}`,
                     "Content-Type": "application/json"

@@ -17,7 +17,7 @@ const Table = () => {
               return;
             }
     
-            const response = await axios.get("http://localhost:3000/api/leave", {
+            const response = await axios.get("https://employee-server-five.vercel.app/api/leave", {
               headers: {
                 Authorization: `Bearer ${token}`,
               },

@@ -32,7 +32,7 @@ export const DepartmentButtons = ({id, onDeleteDepartment}) =>{
                 return;
             }
 
-            const response = await axios.delete(`http://localhost:3000/api/department/${id}`, {
+            const response = await axios.delete(`https://employee-server-five.vercel.app/api/department/${id}`, {
                 headers: {
                     Authorization: `Bearer ${token}`,
                 },

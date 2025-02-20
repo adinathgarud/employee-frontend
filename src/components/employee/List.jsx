@@ -18,7 +18,7 @@ const List = () => {
           return;
         }
 
-        const response = await axios.get("http://localhost:3000/api/employee", {
+        const response = await axios.get("https://employee-server-five.vercel.app/api/employee", {
           headers: {
             Authorization: `Bearer ${token}`,
           },
@@ -36,7 +36,7 @@ const List = () => {
               <img
                 width={40}
                 className="rounded-full"
-                src={`http://localhost:3000/${emp.userId.profileImage}`}
+                src={`https://employee-server-five.vercel.app/${emp.userId.profileImage}`}
                 alt="Profile"
               />
             ) : (

@@ -24,7 +24,7 @@ const DepartmentsList = () => {
         return;
       }
 
-      const response = await axios.get("http://localhost:3000/api/department", {
+      const response = await axios.get("https://employee-server-five.vercel.app/api/department", {
         headers: {
           Authorization: `Bearer ${token}`,
         },

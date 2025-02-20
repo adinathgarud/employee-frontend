@@ -16,7 +16,7 @@ const List = () => {
             const token = localStorage.getItem("token");
             
 
-            const response = await axios.get(`http://localhost:3000/api/leave/${id}/${user.role}`, {
+            const response = await axios.get(`https://employee-server-five.vercel.app/api/leave/${id}/${user.role}`, {
                 headers: {
                     Authorization: `Bearer ${token}`,
                 },

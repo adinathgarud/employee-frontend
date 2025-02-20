@@ -19,7 +19,7 @@ const EditDepartment = () => {
                     return;
                 }
 
-                const response = await axios.get(`http://localhost:3000/api/department/${id}`, {
+                const response = await axios.get(`https://employee-server-five.vercel.app/api/department/${id}`, {
                     headers: {
                         Authorization: `Bearer ${token}`,
                     },
@@ -52,7 +52,7 @@ const EditDepartment = () => {
     const handleSubmit = async (e) => {
         e.preventDefault(); // Corrected typo here
         try {
-            const response = await axios.put(`http://localhost:3000/api/department/${id}`, department, {
+            const response = await axios.put(`https://employee-server-five.vercel.app/api/department/${id}`, department, {
                 headers: { Authorization: `Bearer ${localStorage.getItem('token')}` },
             });
             if (response.data.success) {
